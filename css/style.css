@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto:wght@300&display=swap');
+
+body{
+  background-color: rgb(248,248,248);
+}
+
+header{
+  position:absolute;
+  z-index: 10;
+  width: 100%;
+}
+.navbar{
+padding: 20px 0;
+}
+.navbar-brand{
+  font-weight: 800;
+  
+  font-size:2em;
+  color: #262626;
+}
+.nav-item{
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+ .navbar-light .navbar-nav .nav-item .nav-link.active {
+  background: #262626;
+  color: #fff;
+}
+.navbar-light .navbar-nav .nav-item .nav-link{
+  color: #262626;
+  padding:5px 15px;
+}
+.banner{
+  position:relative;
+  background:url('/img/3.svg');
+  min-height: 100vh;
+  background-size:cover;
+  background-position: center;
+  padding-top:300px;
+  padding-bottom:200px;
+  
+}
+.banner h2{
+  font-family: 'Mate SC', serif;
+  margin: 0;
+  padding:0;
+  font-size: 2.8em;
+  font-weight: 1000;
+  text-transform: uppercase;
+
+}
+
+.banner p{
+  font-family: 'Roboto', sans-serif;
+  margin: 1em 0 0;
+  padding:0;
+  font-size: 1.2em;
+  color: #262626;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+.banner form{
+display: inline-block;
+margin: 1em  0;
+padding-left:3.5%;
+
+}
+
+@media screen and (max-width: 768px){
+  .banner{
+    padding:200px 0 ;
+    position:relative;
+    background:url('/img/3.svg');
+    min-height: 100vh;
+    background-size:cover;
+    background-position: center;
+ 
+  }
+  .banner h2{
+    font-size:1.8em;
+    margin-top: 5%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .banner h2{
+    margin-left: 8%;
+    margin-top: 5%;
+  }
+  .banner p{
+    margin-left: 9%;
+  }
+  .banner form{
+    position: absolute;
+  }
+}
+
+
+.resp{
+  position: relative;
+  padding:45px 0;
+}
+.card{
+  position: relative;
+ margin-top: 5%;
+}
+.card  .card-img{
+  width: 400px;
+  height: 400px;
+  padding-top: 10%;
+  opacity: 0.3;
+  margin-bottom: 5%;
+}
+
+.card .card-img-overlay{
+  padding-left: 11%;
+  padding-right:11%;
+  padding-bottom: 10%;
+}
+
+.card .card-title{
+  font-family: 'Mate SC', serif;
+  font-size:3rem;
+  font-weight:bold;
+  padding-top: 3%;
+}
+
+.card .card-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+.main{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left:5%;
+  padding-right:5%;
+  background-color: rgb(248,248,248);
+  
+}
+.head{
+    background-color: rgb(248,248,248);
+    margin-bottom: 10px;
+}
+.main-body{
+    background-color: rgb(248,248,248);
+}
+
+
+.main h1{
+  position: relative;
+  height: auto;
+  width: 550px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin:0 0 2% 0;
+  text-align: center;
+  font-family: 'Mate SC', serif;
+  font-size: 2.8em;
+  font-weight: 650;
+  letter-spacing: 1.5px;
+  
+  background:rgb(248,248,248)
+}
+.main p{
+  position: relative;
+  height: auto;
+  width: 100%;
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  color: #777;
+}
+.main .gallery{
+  position: relative;
+  height: auto;
+  width: 90%;
+  margin: auto;
+  padding-top: 45px 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto; 
+  grid-gap: 2vh;
+  grid-auto-flow: dense;
+}
+.main .gallery .img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );
+  border-radius: 2px;
+}
+.main .gallery .img:first-child{
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(2n+3){
+  grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(4n+5){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(6n+7){
+  grid-row-start: span 1;
+}
+.main .gallery .img:nth-child(8n+9){
+  grid-column-start: span 1;
+  grid-row-start: span 1;
+}
+.main .gallery .img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5) grayscale(100);
+  border-radius: 2px;
+  transition: 0.3s ease-in-out;
+}
+.main .gallery .img:hover img{
+  filter: brightness(1) grayscale(0);
+}
+
+@media only screen and (max-width: 768px){
+  .main h1{
+    font-size: 1.8em;
+    width: 400px;
+  }
+  .main p{
+    font-size: 1.2em;
+  }
+  .main .gallery{
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (max-width: 430px){
+  .main h1{
+    font-size: 0.8em;
+    width: 250px;
+  }
+  .main p{
+    font-size: 0.69em;
+  }
+  .main .gallery{
+    display: block;
+  
+  }
+  .main .gallery .img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin:2% 0;
+  }
+  .main .gallery .img img{
+    display: block;
+    filter: brightness(1) grayscale(0);
+  }
+}
+
+
+footer{
+background-color: rgb(248,248,248);
+padding-top: 40px;
+}
+.social{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  text-align: center;
+}
+.social ul{
+  padding: 0;
+  margin:0;
+  padding:0px 0;
+  display: flex;
+  
+}
+
+.social ul li{
+  list-style: none;
+  margin:0 15px;
+}
+
+.social ul li .fa{
+  font-size:30px;
+  line-height:60px;
+  transition:.6sec;
+  color:black;
+}
+
+.social ul li a{
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.social a:hover i{
+  color: #0099FF;
+}
+.social h3{
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height:3rem;
+}
+.social p{
+  max-width: 500px;
+  margin:10px auto;
+  line-height:28px;
+  font-size: 14px;
+}
+  
+
+
+.soo{
+  width:100vw;
+  padding:20px 0;
+  text-align: center;
+  font-size:14px;
+  font-weight:500;
+}
+
+.soo a{
+  text-decoration:none;
+  opacity:.4;
+}
+  
+  
+@media only screen and (max-width: 768px){
+  .social ul li .fa{
+    font-size:25px;
+  }
+  .social ul li a{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+  }
+}
+
+@media only screen and (max-width: 400x){
+  body {
+    width:100%;
+  }
+  .main{
+    width:100%;
+    
+  }
+} 
+  
+  
+  
+  
+  
+  
