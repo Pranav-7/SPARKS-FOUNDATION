@@ -1,4 +1,4 @@
-# SPARK-FOUNDATION
+# SPARKS-FOUNDATION
 
 **The Sparks Foundation Internship Project :** PAYMENT GATEWAY INTEGRATION<hr><br>
 **A Dynamic (RESPONSIVE) Website which help to donate money for orphans.**<br>
